@@ -1,7 +1,7 @@
 import pygame
 import settings
 import sys
-import game
+import pacman_play as pp
 
 
 def check_keydown_events(event, hero_sprites):
@@ -39,7 +39,9 @@ def start_level_game(level, screen, font):
     SCORE = 0
     wall_sprites = level.setup_walls(ai_settings.skyblue)
     gate_sprites = level.setup_gate(ai_settings.white)
-    hero_sprites, ghost_sprites = level.setup_players(ai_settings.pacman, [ai_settings.blinky,ai_settings.clyde,ai_settings.inky,ai_settings.pinky])
+    hero_sprites, ghost_sprites = level.setup_players(ai_settings.pacman,
+                     [ai_settings.blinky,ai_settings.clyde,
+                      ai_settings.inky,ai_settings.pinky])
     food_sprites = level.setup_food(ai_settings.yellow, ai_settings.white)
     is_clearance = False
     while True:
@@ -130,9 +132,9 @@ def show_text(screen, font, is_clearance, flag=False):
                         if not flag:
                             return
                         else:
-                            game.run_game()
+                            pp.run_game()
                     else:
-                        game.run_game()
+                        pp.run_game()
                 elif event.key == pygame.K_ESCAPE:
                     sys.exit()
                     pygame.quit()
