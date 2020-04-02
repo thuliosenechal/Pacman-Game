@@ -3,7 +3,6 @@ import levels
 from settings import Settings
 import game_functions as gf
 
-print('teste')
 
 def run_game():
     # Inicializa o pygame, as configurações e o objeto screen
