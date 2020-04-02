@@ -1,4 +1,4 @@
-from sprites import *
+from player import *
 
 
 numlevels = 1
