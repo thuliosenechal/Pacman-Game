@@ -1,4 +1,7 @@
-from player import *
+import pygame
+from player import Player
+from wall import Wall
+from food import Food
 
 
 numlevels = 1

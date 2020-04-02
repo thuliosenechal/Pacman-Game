@@ -8,19 +8,19 @@ def check_keydown_events(event, hero_sprites):
     """Responde a pressionamentos de tecla."""
     if event.key == pygame.K_LEFT:
         for hero in hero_sprites:
-            hero.changeSpeed([-1, 0])
+            hero.change_speed([-1, 0])
             hero.is_move = True
     elif event.key == pygame.K_RIGHT:
         for hero in hero_sprites:
-            hero.changeSpeed([1, 0])
+            hero.change_speed([1, 0])
             hero.is_move = True
     elif event.key == pygame.K_UP:
         for hero in hero_sprites:
-            hero.changeSpeed([0, -1])
+            hero.change_speed([0, -1])
             hero.is_move = True
     elif event.key == pygame.K_DOWN:
         for hero in hero_sprites:
-            hero.changeSpeed([0, 1])
+            hero.change_speed([0, 1])
             hero.is_move = True
 
 def check_keyup_events(event, hero_sprites):
@@ -68,7 +68,7 @@ def start_level_game(level, screen, font):
 
         for ghost in ghost_sprites:
             if ghost.tracks_loc[1] < ghost.tracks[ghost.tracks_loc[0]][2]:
-                ghost.changeSpeed(ghost.tracks[ghost.tracks_loc[0]][0: 2])
+                ghost.change_speed(ghost.tracks[ghost.tracks_loc[0]][0: 2])
                 ghost.tracks_loc[1] += 1
             else:
                 if ghost.tracks_loc[0] < len(ghost.tracks) - 1:
@@ -77,10 +77,10 @@ def start_level_game(level, screen, font):
                     ghost.tracks_loc[0] = 2
                 else:
                     ghost.tracks_loc[0] = 0
-                ghost.changeSpeed(ghost.tracks[ghost.tracks_loc[0]][0: 2])
+                ghost.change_speed(ghost.tracks[ghost.tracks_loc[0]][0: 2])
                 ghost.tracks_loc[1] = 0
             if ghost.tracks_loc[1] < ghost.tracks[ghost.tracks_loc[0]][2]:
-                ghost.changeSpeed(ghost.tracks[ghost.tracks_loc[0]][0: 2])
+                ghost.change_speed(ghost.tracks[ghost.tracks_loc[0]][0: 2])
             else:
                 if ghost.tracks_loc[0] < len(ghost.tracks) - 1:
                     loc0 = ghost.tracks_loc[0] + 1
@@ -88,7 +88,7 @@ def start_level_game(level, screen, font):
                     loc0 = 2
                 else:
                     loc0 = 0
-                ghost.changeSpeed(ghost.tracks[loc0][0: 2])
+                ghost.change_speed(ghost.tracks[loc0][0: 2])
             ghost.update(wall_sprites, None)
         ghost_sprites.draw(screen)
         score_text = font.render("Score: %s" % SCORE, True, ai_settings.red)
