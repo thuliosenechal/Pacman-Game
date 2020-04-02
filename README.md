@@ -21,6 +21,6 @@ Install Pygame module
 
 ## GamePlay:
 
-
+![Capturar](https://user-images.githubusercontent.com/57634027/78262535-15c14600-74d7-11ea-9731-a84ead9a0153.JPG)
 
 
