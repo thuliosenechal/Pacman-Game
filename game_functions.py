@@ -37,10 +37,10 @@ def start_level_game(level, screen, font):
     ai_settings = settings.Settings()
     clock = pygame.time.Clock()
     SCORE = 0
-    wall_sprites = level.setupWalls(ai_settings.skyblue)
-    gate_sprites = level.setupGate(ai_settings.white)
-    hero_sprites, ghost_sprites = level.setupPlayers(ai_settings.pacman, [ai_settings.blinky,ai_settings.clyde,ai_settings.inky,ai_settings.pinky])
-    food_sprites = level.setupFood(ai_settings.yellow, ai_settings.white)
+    wall_sprites = level.setup_walls(ai_settings.skyblue)
+    gate_sprites = level.setup_gate(ai_settings.white)
+    hero_sprites, ghost_sprites = level.setup_players(ai_settings.pacman, [ai_settings.blinky,ai_settings.clyde,ai_settings.inky,ai_settings.pinky])
+    food_sprites = level.setup_food(ai_settings.yellow, ai_settings.white)
     is_clearance = False
     while True:
         for event in pygame.event.get():

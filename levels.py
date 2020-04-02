@@ -1,14 +1,14 @@
 from sprites import *
 
 
-NUMLEVELS = 1
+numlevels = 1
 
 
 class Level1():
     def __init__(self):
         self.info = 'level1'
 
-    def setupWalls(self, wall_color):
+    def setup_walls(self, wall_color):
         self.wall_sprites = pygame.sprite.Group()
         wall_positions = [[0, 0, 6, 600],
                           [0, 0, 600, 6],
@@ -53,12 +53,12 @@ class Level1():
             self.wall_sprites.add(wall)
         return self.wall_sprites
 
-    def setupGate(self, gate_color):
+    def setup_gate(self, gate_color):
         self.gate_sprites = pygame.sprite.Group()
         self.gate_sprites.add(Wall(282, 242, 42, 2, gate_color))
         return self.gate_sprites
 
-    def setupPlayers(self, hero_image_path, ghost_images_path):
+    def setup_players(self, hero_image_path, ghost_images_path):
         self.hero_sprites = pygame.sprite.Group()
         self.ghost_sprites = pygame.sprite.Group()
         self.hero_sprites.add(Player(287, 439, hero_image_path))
@@ -102,7 +102,7 @@ class Level1():
                 self.ghost_sprites.add(player)
         return self.hero_sprites, self.ghost_sprites
 
-    def setupFood(self, food_color, bg_color):
+    def setup_food(self, food_color, bg_color):
         self.food_sprites = pygame.sprite.Group()
         for row in range(19):
             for col in range(19):
