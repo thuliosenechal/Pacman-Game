@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="760a9d61-5825-4db0-8d42-0fe99d13fc2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +144,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585855221000</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Refactored Readme">
+      <created>1585880289400</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585880289400</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Refactored Text">
+      <created>1585880486331</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585880486331</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +177,8 @@
     <MESSAGE value="Create new classes in differents files." />
     <MESSAGE value="Refactored all" />
     <MESSAGE value="Refactored game_functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored game_functions" />
+    <MESSAGE value="Refactored Readme" />
+    <MESSAGE value="Refactored Text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored Text" />
   </component>
 </project>

@@ -23,15 +23,17 @@ def check_keydown_events(event, hero_sprites):
             hero.change_speed([0, 1])
             hero.is_move = True
 
+
 def check_keyup_events(event, hero_sprites):
     """Responde a solturas de tecla."""
     if (event.key == pygame.K_LEFT) or \
-       (event.key == pygame.K_RIGHT) or \
-        (event.key == pygame.K_UP) or \
-        (event.key == pygame.K_DOWN):
+            (event.key == pygame.K_RIGHT) or \
+            (event.key == pygame.K_UP) or \
+            (event.key == pygame.K_DOWN):
 
         for hero in hero_sprites:
             hero.is_move = False
+
 
 def start_level_game(level, screen, font):
     ai_settings = settings.Settings()
@@ -40,8 +42,8 @@ def start_level_game(level, screen, font):
     wall_sprites = level.setup_walls(ai_settings.skyblue)
     gate_sprites = level.setup_gate(ai_settings.white)
     hero_sprites, ghost_sprites = level.setup_players(ai_settings.pacman,
-                     [ai_settings.blinky,ai_settings.clyde,
-                      ai_settings.inky,ai_settings.pinky])
+                                                      [ai_settings.blinky, ai_settings.clyde,
+                                                       ai_settings.inky, ai_settings.pinky])
     food_sprites = level.setup_food(ai_settings.yellow, ai_settings.white)
     is_clearance = False
     while True:
@@ -105,6 +107,7 @@ def start_level_game(level, screen, font):
         pygame.display.flip()
         clock.tick(10)
     return is_clearance
+
 
 def show_text(screen, font, is_clearance, flag=False):
     ai_settings = settings.Settings()

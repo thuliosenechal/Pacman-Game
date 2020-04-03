@@ -49,5 +49,5 @@ class Player(Sprite):
             return False
         return True
 
-    def random_direction(self):
-        return random.choice([[-0.5, 0], [0.5, 0], [0, 0.5], [0, -0.5]])
+   #def random_direction(self):
+        #return random.choice([[-0.5, 0], [0.5, 0], [0, 0.5], [0, -0.5]])
