@@ -1,30 +1,11 @@
 import random
 import pygame
+from pygame.sprite import Sprite
 
 
-class Wall(pygame.sprite.Sprite):
-    def __init__(self, x, y, width, height, color, **kwargs):
-        pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.Surface([width, height])
-        self.image.fill(color)
-        self.rect = self.image.get_rect()
-        self.rect.left = x
-        self.rect.top = y
-
-class Food(pygame.sprite.Sprite):
-    def __init__(self, x, y, width, height, color, bg_color, **kwargs):
-        pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.Surface([width, height])
-        self.image.fill(bg_color)
-        self.image.set_colorkey(bg_color)
-        pygame.draw.ellipse(self.image, color, [0, 0, width, height])
-        self.rect = self.image.get_rect()
-        self.rect.left = x
-        self.rect.top = y
-
-class Player(pygame.sprite.Sprite):
+class Player(Sprite):
     def __init__(self, x, y, role_image_path):
-        pygame.sprite.Sprite.__init__(self)
+        Sprite.__init__(self)
         self.role_name = role_image_path.split('/')[-1].split('.')[0]
         self.base_image = pygame.image.load(role_image_path).convert()
         self.image = self.base_image.copy()
@@ -39,7 +20,7 @@ class Player(pygame.sprite.Sprite):
         self.tracks = []
         self.tracks_loc = [0, 0]
 
-    def changeSpeed(self, direction):
+    def change_speed(self, direction):
         if direction[0] < 0:
             self.image = pygame.transform.flip(self.base_image, True, False)
         elif direction[0] > 0:
@@ -68,5 +49,5 @@ class Player(pygame.sprite.Sprite):
             return False
         return True
 
-    def randomDirection(self):
+    def random_direction(self):
         return random.choice([[-0.5, 0], [0.5, 0], [0, 0.5], [0, -0.5]])

@@ -15,8 +15,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZxY3IN7WHmx4s32gMOxA9gPSxD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Alien-Invasion" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -32,7 +37,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.pacman_play">
     <configuration name="game" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Pacman" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -45,7 +50,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Etica\PycharmProjects\Pacman\pacman_play.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pacman_play" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Pacman" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pacman_play.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -56,6 +82,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pacman_play" />
         <item itemvalue="Python.game" />
       </list>
     </recent_temporary>
@@ -71,6 +98,98 @@
       <option name="presentableId" value="Default" />
       <updated>1585782011133</updated>
     </task>
+    <task id="LOCAL-00001" summary="Create Wall Class in wall.py">
+      <created>1585849596937</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585849596937</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create Wall Class in wall.py">
+      <created>1585849715309</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585849715309</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Create Wall Class in wall.py">
+      <created>1585849809954</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585849809954</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Create new classes in differents files.">
+      <created>1585850248718</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585850248718</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Refactored all">
+      <created>1585850686811</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585850686811</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Refactored game_functions">
+      <created>1585855221000</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585855221000</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Refactored Readme">
+      <created>1585880289400</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585880289400</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Refactored Text">
+      <created>1585880486331</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585880486331</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Refactored Text">
+      <created>1585881780136</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1585881780136</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Last refactor">
+      <created>1585882269581</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1585882269581</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create Wall Class in wall.py" />
+    <MESSAGE value="Create new classes in differents files." />
+    <MESSAGE value="Refactored all" />
+    <MESSAGE value="Refactored game_functions" />
+    <MESSAGE value="Refactored Readme" />
+    <MESSAGE value="Refactored Text" />
+    <MESSAGE value="Last refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Last refactor" />
   </component>
 </project>

@@ -19,10 +19,10 @@ def run_game():
     pygame.mixer.music.load(ai_settings.set_music)
     pygame.mixer.music.play(-1, 0.0)
 
-    for num_level in range(1, levels.NUMLEVELS+1):
+    for num_level in range(1, levels.numlevels + 1):
         if num_level == 1:
             is_clearance = gf.start_level_game(level, screen, ai_settings.font_small)
-            if num_level == levels.NUMLEVELS:
+            if num_level == levels.numlevels:
                 gf.show_text(screen, ai_settings.font_big, is_clearance, True)
             else:
                 gf.show_text(screen, ai_settings.font_big, is_clearance)

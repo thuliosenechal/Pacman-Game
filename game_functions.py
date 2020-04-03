@@ -1,46 +1,50 @@
 import pygame
 import settings
 import sys
-import game
+import pacman_play as pp
 
 
 def check_keydown_events(event, hero_sprites):
     """Responde a pressionamentos de tecla."""
     if event.key == pygame.K_LEFT:
         for hero in hero_sprites:
-            hero.changeSpeed([-1, 0])
+            hero.change_speed([-1, 0])
             hero.is_move = True
     elif event.key == pygame.K_RIGHT:
         for hero in hero_sprites:
-            hero.changeSpeed([1, 0])
+            hero.change_speed([1, 0])
             hero.is_move = True
     elif event.key == pygame.K_UP:
         for hero in hero_sprites:
-            hero.changeSpeed([0, -1])
+            hero.change_speed([0, -1])
             hero.is_move = True
     elif event.key == pygame.K_DOWN:
         for hero in hero_sprites:
-            hero.changeSpeed([0, 1])
+            hero.change_speed([0, 1])
             hero.is_move = True
+
 
 def check_keyup_events(event, hero_sprites):
     """Responde a solturas de tecla."""
     if (event.key == pygame.K_LEFT) or \
-       (event.key == pygame.K_RIGHT) or \
-        (event.key == pygame.K_UP) or \
-        (event.key == pygame.K_DOWN):
+            (event.key == pygame.K_RIGHT) or \
+            (event.key == pygame.K_UP) or \
+            (event.key == pygame.K_DOWN):
 
         for hero in hero_sprites:
             hero.is_move = False
+
 
 def start_level_game(level, screen, font):
     ai_settings = settings.Settings()
     clock = pygame.time.Clock()
     SCORE = 0
-    wall_sprites = level.setupWalls(ai_settings.skyblue)
-    gate_sprites = level.setupGate(ai_settings.white)
-    hero_sprites, ghost_sprites = level.setupPlayers(ai_settings.pacman, [ai_settings.blinky,ai_settings.clyde,ai_settings.inky,ai_settings.pinky])
-    food_sprites = level.setupFood(ai_settings.yellow, ai_settings.white)
+    wall_sprites = level.setup_walls(ai_settings.skyblue)
+    gate_sprites = level.setup_gate(ai_settings.white)
+    hero_sprites, ghost_sprites = level.setup_players(ai_settings.pacman,
+                                                      [ai_settings.blinky, ai_settings.clyde,
+                                                       ai_settings.inky, ai_settings.pinky])
+    food_sprites = level.setup_food(ai_settings.yellow, ai_settings.white)
     is_clearance = False
     while True:
         for event in pygame.event.get():
@@ -68,7 +72,7 @@ def start_level_game(level, screen, font):
 
         for ghost in ghost_sprites:
             if ghost.tracks_loc[1] < ghost.tracks[ghost.tracks_loc[0]][2]:
-                ghost.changeSpeed(ghost.tracks[ghost.tracks_loc[0]][0: 2])
+                ghost.change_speed(ghost.tracks[ghost.tracks_loc[0]][0: 2])
                 ghost.tracks_loc[1] += 1
             else:
                 if ghost.tracks_loc[0] < len(ghost.tracks) - 1:
@@ -77,10 +81,10 @@ def start_level_game(level, screen, font):
                     ghost.tracks_loc[0] = 2
                 else:
                     ghost.tracks_loc[0] = 0
-                ghost.changeSpeed(ghost.tracks[ghost.tracks_loc[0]][0: 2])
+                ghost.change_speed(ghost.tracks[ghost.tracks_loc[0]][0: 2])
                 ghost.tracks_loc[1] = 0
             if ghost.tracks_loc[1] < ghost.tracks[ghost.tracks_loc[0]][2]:
-                ghost.changeSpeed(ghost.tracks[ghost.tracks_loc[0]][0: 2])
+                ghost.change_speed(ghost.tracks[ghost.tracks_loc[0]][0: 2])
             else:
                 if ghost.tracks_loc[0] < len(ghost.tracks) - 1:
                     loc0 = ghost.tracks_loc[0] + 1
@@ -88,7 +92,7 @@ def start_level_game(level, screen, font):
                     loc0 = 2
                 else:
                     loc0 = 0
-                ghost.changeSpeed(ghost.tracks[loc0][0: 2])
+                ghost.change_speed(ghost.tracks[loc0][0: 2])
             ghost.update(wall_sprites, None)
         ghost_sprites.draw(screen)
         score_text = font.render("Score: %s" % SCORE, True, ai_settings.red)
@@ -104,6 +108,7 @@ def start_level_game(level, screen, font):
         clock.tick(10)
     return is_clearance
 
+
 def show_text(screen, font, is_clearance, flag=False):
     ai_settings = settings.Settings()
     clock = pygame.time.Clock()
@@ -118,7 +123,7 @@ def show_text(screen, font, is_clearance, flag=False):
     screen.blit(surface, (100, 200))
     texts = [font.render(msg, True, ai_settings.white),
              font.render('Press ENTER to continue or play again.', True, ai_settings.white),
-             font.render('Press ESCAPE to quit.', True, ai_settings.white)]
+             font.render('Press ESC to quit.', True, ai_settings.white)]
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -130,9 +135,9 @@ def show_text(screen, font, is_clearance, flag=False):
                         if not flag:
                             return
                         else:
-                            game.run_game()
+                            pp.run_game()
                     else:
-                        game.run_game()
+                        pp.run_game()
                 elif event.key == pygame.K_ESCAPE:
                     sys.exit()
                     pygame.quit()
