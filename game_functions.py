@@ -120,7 +120,7 @@ def show_text(screen, font, is_clearance, flag=False):
     screen.blit(surface, (100, 200))
     texts = [font.render(msg, True, ai_settings.white),
              font.render('Press ENTER to continue or play again.', True, ai_settings.white),
-             font.render('Press ESCAPE to quit.', True, ai_settings.white)]
+             font.render('Press ESC to quit.', True, ai_settings.white)]
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
