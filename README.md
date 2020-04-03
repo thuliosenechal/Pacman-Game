@@ -1,5 +1,5 @@
 # Pacman
-Pacman Game a
+Pacman Game
 
 
 ## Environment (Tested):

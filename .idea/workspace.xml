@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="760a9d61-5825-4db0-8d42-0fe99d13fc2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/pacman_play.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585850686811</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactored game_functions">
+      <created>1585855221000</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585855221000</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,6 +161,7 @@
     <MESSAGE value="Create Wall Class in wall.py" />
     <MESSAGE value="Create new classes in differents files." />
     <MESSAGE value="Refactored all" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored all" />
+    <MESSAGE value="Refactored game_functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored game_functions" />
   </component>
 </project>
