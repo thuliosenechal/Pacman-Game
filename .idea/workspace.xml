@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="760a9d61-5825-4db0-8d42-0fe99d13fc2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
-    </list>
+    <list default="true" id="760a9d61-5825-4db0-8d42-0fe99d13fc2a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585881780136</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Last refactor">
+      <created>1585882269581</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1585882269581</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +189,7 @@
     <MESSAGE value="Refactored game_functions" />
     <MESSAGE value="Refactored Readme" />
     <MESSAGE value="Refactored Text" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored Text" />
+    <MESSAGE value="Last refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Last refactor" />
   </component>
 </project>
